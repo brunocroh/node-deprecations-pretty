@@ -15,5 +15,8 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "mdbox": "^0.1.1"
   }
 }

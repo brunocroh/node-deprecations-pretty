@@ -1,4 +1,5 @@
 import type { DeprecationModule, DeprecationOutput } from "./types.js";
+import { md } from "mdbox";
 import { writeFileSync } from "node:fs";
 
 const result = await fetch("https://nodejs.org/api/deprecations.json");
@@ -7,16 +8,16 @@ const json = await response.json();
 
 const deprecationsModules: DeprecationModule[] = json.miscs[0].miscs[1].modules;
 
-const deprecationsByVersion = new Map();
+const deprecationsByVersion = new Map<string, DeprecationOutput[]>();
 
 const getVersion = (version: string) => {
-  return version.split(".")[0];
+  return version.split(".")[0]!;
 };
 
 function addDeprecation(version: string, deprecation: DeprecationOutput) {
   const _version = getVersion(version);
   if (deprecationsByVersion.has(_version)) {
-    deprecationsByVersion.get(_version).push(deprecation);
+    deprecationsByVersion.get(_version)?.push(deprecation);
   } else {
     deprecationsByVersion.set(_version, [deprecation]);
   }
@@ -55,13 +56,15 @@ const sortedVersions = Array.from(deprecationsByVersion.keys()).sort((a, b) => {
 for (const version of sortedVersions) {
   const deprecations = deprecationsByVersion.get(version);
 
-  markdownContent += `## Node.js ${version}\n\n`;
-  markdownContent += "| Display Name | Version | Deprecation Type |\n";
-  markdownContent += "|--------------|---------|------------------|\n";
-
-  for (const deprecation of deprecations) {
-    markdownContent += `| ${deprecation.displayName || deprecation.name} | ${deprecation.version} | ${deprecation.deprecationType} |\n`;
-  }
+  markdownContent += md.heading(`## Node.js ${version}`, 2);
+  markdownContent += md.table({
+    columns: ["Display Name", "Version", "Deprecation Type"],
+    rows: deprecations!.map((dep) => [
+      dep.displayName,
+      dep.version,
+      dep.deprecationType,
+    ]),
+  });
 
   markdownContent += "\n";
 }

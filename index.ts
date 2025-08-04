@@ -1,5 +1,5 @@
 import type { DeprecationModule, DeprecationOutput } from "./types.js";
-import { writeFileSync } from "fs";
+import { writeFileSync } from "node:fs";
 
 const result = await fetch("https://nodejs.org/api/deprecations.json");
 const response = new Response(result.body);

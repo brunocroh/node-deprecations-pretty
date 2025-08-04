@@ -1,0 +1,19 @@
+{
+  "name": "node-deprecations-pretty",
+  "version": "1.0.0",
+  "description": "Fetch and make node deprecations easier to read and follow",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node index.ts",
+    "test": "test"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Bruno Rodrigues",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}

@@ -15,11 +15,25 @@ const getVersion = (version: string) => {
 };
 
 function addDeprecation(version: string, deprecation: DeprecationOutput) {
+  const [code, name]: [string, string] = deprecation.displayName.split(":") as [
+    string,
+    string,
+  ];
   const _version = getVersion(version);
   if (deprecationsByVersion.has(_version)) {
-    deprecationsByVersion.get(_version)?.push(deprecation);
+    deprecationsByVersion.get(_version)?.push({
+      ...deprecation,
+      code,
+      displayName: name,
+    });
   } else {
-    deprecationsByVersion.set(_version, [deprecation]);
+    deprecationsByVersion.set(_version, [
+      {
+        ...deprecation,
+        code,
+        displayName: name,
+      },
+    ]);
   }
 }
 
@@ -32,6 +46,7 @@ for (const deprecation of deprecationsModules) {
           version: version,
           displayName: deprecation.displayName,
           deprecationType: change.description,
+          url: change,
         });
       }
     } else {
@@ -58,8 +73,9 @@ for (const version of sortedVersions) {
 
   markdownContent += md.heading(`## Node.js ${version}`, 2);
   markdownContent += md.table({
-    columns: ["Display Name", "Version", "Deprecation Type"],
+    columns: ["Code", "Display Name", "Version", "Deprecation Type"],
     rows: deprecations!.map((dep) => [
+      md.link(`https://nodejs.org/api/deprecations.html#${dep.code}`, dep.code),
       dep.displayName,
       dep.version,
       dep.deprecationType,

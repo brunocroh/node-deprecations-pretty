@@ -2,6 +2,7 @@
 
 
 ## Node.js v24
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0030](https://nodejs.org/api/deprecations.html#DEP0030) |  `SlowBuffer` | v24.0.0 | Runtime deprecation. |
@@ -33,6 +34,7 @@
 | [DEP0198](https://nodejs.org/api/deprecations.html#DEP0198) |  Creating SHAKE-128 and SHAKE-256 digests without an explicit `options.outputLength` | v24.4.0 | Documentation-only deprecation with support for `--pending-deprecation`. |
 
 ## Node.js v23
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0045](https://nodejs.org/api/deprecations.html#DEP0045) |  `util.isBoolean()` | v23.0.0 | End-of-Life deprecation. |
@@ -62,6 +64,7 @@
 | [DEP0190](https://nodejs.org/api/deprecations.html#DEP0190) |  Passing `args` to `node | v23.11.0 | Documentation-only deprecation. |
 
 ## Node.js v22
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0044](https://nodejs.org/api/deprecations.html#DEP0044) |  `util.isArray()` | v22.0.0 | Runtime deprecation. |
@@ -95,6 +98,7 @@
 | [DEP0190](https://nodejs.org/api/deprecations.html#DEP0190) |  Passing `args` to `node | v22.15.0 | Documentation-only deprecation. |
 
 ## Node.js v21
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0040](https://nodejs.org/api/deprecations.html#DEP0040) |  `node | v21.0.0 | Runtime deprecation. |
@@ -105,6 +109,7 @@
 | [DEP0179](https://nodejs.org/api/deprecations.html#DEP0179) |  `Hash` constructor | v21.5.0 | Documentation-only deprecation. |
 
 ## Node.js v20
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0091](https://nodejs.org/api/deprecations.html#DEP0091) |  `crypto.DEFAULT_ENCODING` | v20.0.0 | End-of-Life. |
@@ -128,6 +133,7 @@
 | [DEP0185](https://nodejs.org/api/deprecations.html#DEP0185) |  Instantiating `node | v20.18.0 | Documentation-only deprecation. |
 
 ## Node.js v19
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0116](https://nodejs.org/api/deprecations.html#DEP0116) |  Legacy URL API | v19.0.0 | \`url.parse()` is deprecated again in DEP0169. |
@@ -141,6 +147,7 @@
 | [DEP0171](https://nodejs.org/api/deprecations.html#DEP0171) |  Setters for `http.IncomingMessage` headers and trailers | v19.3.0 | Documentation-only deprecation. |
 
 ## Node.js v18
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0076](https://nodejs.org/api/deprecations.html#DEP0076) |  `tls.parseCertString()` | v18.0.0 | End-of-Life. |
@@ -164,6 +171,7 @@
 | [DEP0178](https://nodejs.org/api/deprecations.html#DEP0178) |  `dirent.path` | v18.20.0 | Documentation-only deprecation. |
 
 ## Node.js v17
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0148](https://nodejs.org/api/deprecations.html#DEP0148) |  Folder mappings in `"exports"` (trailing `"/"`) | v17.0.0 | End-of-Life. |
@@ -177,6 +185,7 @@
 | [DEP0162](https://nodejs.org/api/deprecations.html#DEP0162) |  `fs.write()`, `fs.writeFileSync()` coercion to string | v17.8.0 | Documentation-only deprecation. |
 
 ## Node.js v16
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0040](https://nodejs.org/api/deprecations.html#DEP0040) |  `node | v16.6.0 | Added support for `--pending-deprecation`. |
@@ -206,6 +215,7 @@
 | [DEP0168](https://nodejs.org/api/deprecations.html#DEP0168) |  Unhandled exception in Node-API callbacks | v16.17.0 | Runtime deprecation. |
 
 ## Node.js v15
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0018](https://nodejs.org/api/deprecations.html#DEP0018) |  Unhandled promise rejections | v15.0.0 | End-of-Life. |
@@ -223,6 +233,7 @@
 | [DEP0151](https://nodejs.org/api/deprecations.html#DEP0151) |  Main index lookup and extension searching | v15.8.0 | Documentation-only deprecation with `--pending-deprecation` support. |
 
 ## Node.js v14
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0001](https://nodejs.org/api/deprecations.html#DEP0001) |  `http.OutgoingMessage.prototype.flush` | v14.0.0 | End-of-Life. |
@@ -247,6 +258,7 @@
 | [DEP0177](https://nodejs.org/api/deprecations.html#DEP0177) |  `util.types.isWebAssemblyCompiledModule` | v14.0.0 | Documentation-only deprecation. |
 
 ## Node.js v13
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0129](https://nodejs.org/api/deprecations.html#DEP0129) |  `ChildProcess._channel` | v13.0.0 | Runtime deprecation. |
@@ -257,6 +269,7 @@
 | [DEP0140](https://nodejs.org/api/deprecations.html#DEP0140) |  Use `request.destroy()` instead of `request.abort()` | v13.14.0 | Documentation-only deprecation. |
 
 ## Node.js v12
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0006](https://nodejs.org/api/deprecations.html#DEP0006) |  `child_process` `options.customFds` | v12.0.0 | End-of-Life. |
@@ -293,6 +306,7 @@
 | [DEP0144](https://nodejs.org/api/deprecations.html#DEP0144) |  `module.parent` | v12.19.0 | Documentation-only deprecation. |
 
 ## Node.js v11
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0009](https://nodejs.org/api/deprecations.html#DEP0009) |  `crypto.pbkdf2` without digest | v11.0.0 | Runtime deprecation (for `digest === null`). |
@@ -321,6 +335,7 @@
 | [DEP0129](https://nodejs.org/api/deprecations.html#DEP0129) |  `ChildProcess._channel` | v11.14.0 | Documentation-only. |
 
 ## Node.js v10
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0004](https://nodejs.org/api/deprecations.html#DEP0004) |  `CryptoStream.prototype.readyState` | v10.0.0 | End-of-Life. |
@@ -362,6 +377,7 @@
 | [DEP0111](https://nodejs.org/api/deprecations.html#DEP0111) |  `process.binding()` | v10.9.0 | Documentation-only deprecation. |
 
 ## Node.js v9
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0007](https://nodejs.org/api/deprecations.html#DEP0007) |  Replace `cluster` `worker.suicide` with `worker.exitedAfterDisconnect` | v9.0.0 | End-of-Life. |
@@ -388,6 +404,7 @@
 | [DEP0098](https://nodejs.org/api/deprecations.html#DEP0098) |  AsyncHooks embedder `AsyncResource.emitBefore` and `AsyncResource.emitAfter` APIs | v9.6.0 | Runtime deprecation. |
 
 ## Node.js v8
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0002](https://nodejs.org/api/deprecations.html#DEP0002) |  `require('_linklist')` | v8.0.0 | End-of-Life. |
@@ -415,6 +432,7 @@
 | [DEP0098](https://nodejs.org/api/deprecations.html#DEP0098) |  AsyncHooks embedder `AsyncResource.emitBefore` and `AsyncResource.emitAfter` APIs | v8.12.0 | Runtime deprecation. |
 
 ## Node.js v7
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0007](https://nodejs.org/api/deprecations.html#DEP0007) |  Replace `cluster` `worker.suicide` with `worker.exitedAfterDisconnect` | v7.0.0 | Runtime deprecation. |
@@ -427,6 +445,7 @@
 | [DEP0061](https://nodejs.org/api/deprecations.html#DEP0061) |  `fs.SyncWriteStream` | v7.0.0 | Documentation-only deprecation. |
 
 ## Node.js v6
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0001](https://nodejs.org/api/deprecations.html#DEP0001) |  `http.OutgoingMessage.prototype.flush` | v6.12.0 | A deprecation code has been assigned. |
@@ -498,12 +517,14 @@
 | [DEP0064](https://nodejs.org/api/deprecations.html#DEP0064) |  `tls.createSecurePair()` | v6.0.0 | Documentation-only deprecation. |
 
 ## Node.js v5
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0002](https://nodejs.org/api/deprecations.html#DEP0002) |  `require('_linklist')` | v5.0.0 | Runtime deprecation. |
 | [DEP0031](https://nodejs.org/api/deprecations.html#DEP0031) |  `ecdh.setPublicKey()` | v5.2.0 | Documentation-only deprecation. |
 
 ## Node.js v4
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0001](https://nodejs.org/api/deprecations.html#DEP0001) |  `http.OutgoingMessage.prototype.flush` | v4.8.6 | A deprecation code has been assigned. |
@@ -566,6 +587,7 @@
 | [DEP0058](https://nodejs.org/api/deprecations.html#DEP0058) |  `util.isUndefined()` | v4.0.0 | Documentation-only deprecation. |
 
 ## Node.js v3
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0033](https://nodejs.org/api/deprecations.html#DEP0033) |  `EventEmitter.listenerCount()` | v3.2.0 | Documentation-only deprecation. |
@@ -587,6 +609,7 @@
 | [DEP0058](https://nodejs.org/api/deprecations.html#DEP0058) |  `util.isUndefined()` | v3.3.1 | Documentation-only deprecation. |
 
 ## Node.js v1
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0001](https://nodejs.org/api/deprecations.html#DEP0001) |  `http.OutgoingMessage.prototype.flush` | v1.6.0 | Runtime deprecation. |
@@ -596,6 +619,7 @@
 | [DEP0034](https://nodejs.org/api/deprecations.html#DEP0034) |  `fs.exists(path, callback)` | v1.0.0 | Documentation-only deprecation. |
 
 ## Node.js v0
+
 | Code | Display Name | Version | Deprecation Type |
 | --- | --- | --- | --- |
 | [DEP0003](https://nodejs.org/api/deprecations.html#DEP0003) |  `_writableState.buffer` | v0.11.15 | Runtime deprecation. |

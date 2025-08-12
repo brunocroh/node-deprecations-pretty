@@ -71,7 +71,7 @@ const sortedVersions = Array.from(deprecationsByVersion.keys()).sort((a, b) => {
 for (const version of sortedVersions) {
   const deprecations = deprecationsByVersion.get(version);
 
-  markdownContent += md.heading(`Node.js ${version}`, 2);
+  markdownContent += md.heading(`Node.js ${version}\n`, 2);
   markdownContent += md.table({
     columns: ["Code", "Display Name", "Version", "Deprecation Type"],
     rows: deprecations!.map((dep) => [

@@ -1,12 +1,15 @@
 import type { DeprecationModule, DeprecationOutput } from "./types.ts";
-import { md } from "mdbox";
 import { writeFileSync } from "node:fs";
+import { styleText } from "node:util";
+import { md } from "mdbox";
 import {
   addDeprecation,
   inferDeprecationType,
   sortDeprecations,
   sortVersionsDesc,
 } from "./utils.ts";
+
+console.log(`${styleText(["blue", "bold"], "[info]")} Fetching deprecations data...`);
 
 const response = await fetch("https://nodejs.org/api/deprecations.json");
 const json = await response.json();
@@ -33,7 +36,11 @@ for (const deprecation of deprecationsModules) {
   }
 }
 
-let markdownContent = "# Node.js Deprecations by Version\n\n";
+console.log(`${styleText(["green", "bold"], "[success]")} Deprecations data fetched and processed.`);
+
+let markdownContent = "# Node.js Deprecations by Version\n";
+
+markdownContent += "\nThis document lists Node.js deprecations organized by major version.\n";
 
 const sortedVersions = sortVersionsDesc(deprecationsByVersion.keys());
 

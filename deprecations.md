@@ -1,5 +1,6 @@
 # Node.js Deprecations by Version
 
+This document lists Node.js deprecations organized by major version.
 
 ## Node.js v25
 

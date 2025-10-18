@@ -16,6 +16,7 @@ export type DeprecationOutput = {
   name: string;
   version: string;
   displayName: string;
+  code: string;
   deprecationType: string;
 };
 
